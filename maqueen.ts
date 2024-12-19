@@ -123,6 +123,35 @@ namespace maqueen {
             writeData([0x02, direction, speed]);
         }
     }
+    //% block="show numberdropdown $value"
+    //% value.shadow="numberPicker"
+    export function showNumber(value: number) {
+
+    }
+
+    /**
+     * You can also use the fieldOptions.data with numberdropdown, just
+     * make sure that the second entry in each tuple is a number instead of
+     * a string. This is useful for displaying numerical values in different
+     * units.
+     */
+    //% shim=TD_ID
+    //% blockId=numberPickerWithTuples
+    //% block="$value"
+    //% blockHidden=true
+    //% value.fieldEditor="numberdropdown"
+    //% value.fieldOptions.decompileLiterals=true
+    //% value.fieldOptions.data='[["1 mm", 1], ["1 cm", 10], ["1 m", 1000]]'
+    //% value.defl='1'
+    export function __numberPickerWithTuples(value: number): number {
+        return value;
+    }
+
+    //% block="show numberdropdown with tuples $value"
+    //% value.shadow="numberPickerWithTuples"
+    export function showNumberWithTuples(value: number) {
+
+    }
 
     /**
      * Stop the Maqueen motor.
