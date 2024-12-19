@@ -152,6 +152,14 @@ namespace maqueen {
     export function showNumberWithTuples(value: number) {
 
     }
+    /**
+     * Steers two motors by the given ratio
+     */
+    //% block="drehen um $turnRatio grad"
+    //% turnRatio.min=-360 turnRatio.max=360
+    //% turnRatio.shadow=turnRatioPicker
+    export function steer(turnRatio: number) {
+    }
 
     /**
      * Stop the Maqueen motor.
