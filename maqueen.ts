@@ -147,7 +147,7 @@ namespace maqueen {
         return value;
     }
 
-    //% block="show numberdropdown with tuples $value"
+    //% block="TEST show numberdropdown with tuples $value"
     //% value.shadow="numberPickerWithTuples"
     export function showNumberWithTuples(value: number) {
 
